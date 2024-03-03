@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes img{
+            0%{
+                transform: scale(1);
+                box-shadow:inset 0 0 0 0 transparent;
+                border-radius: 100%;
+                opacity: 1;
+            }
+
+            50%{
+                transform: scale(2);
+                box-shadow:inset 0 0 50px 50px pink;
+                border-radius: 50%;
+                opacity: 0.5;
+            }
+            100%{
+                transform: scale(1);
+                box-shadow: inset 0 0 0 0 transparent;
+                border-radius: 0%;
+                opacity: 1;
+            }
+        }
+        img{
+            width:50%;
+            position: absolute;
+            left:25%;
+            right:25%;
+            top:25%;
+            animation-name: img;
+            animation-duration: 40s;
+        }
+        img:nth-child(2){
+            animation-name: img;
+            animation-duration: 34s;
+        }
+        img:nth-child(3){
+            animation-name: img;
+            animation-duration: 28s;
+        }
+        img:nth-child(4){
+            animation-name: img;
+            animation-duration: 22s;
+        }
+        .cl{
+            position: absolute;
+            /* width:50px; */
+            /* height:20px; */
+            padding:5px 10px;
+            background-color:aqua;
+        }
+        a{
+            text-decoration: none;
+            color:black
+        }
+    </style>
+</head>
+<body>
+    <div class="cl"><a href="index.html">Назад</a></div>
+    <img src="ff.svg" alt="">
+    <img src="ff.svg" alt="">
+    <img src="ff.svg" alt="">
+    <img src="ff.svg" alt="">
+    <img src="ff.svg" alt="">
+</body>
+</html>
